@@ -151,3 +151,11 @@ ls --color=auto
 mv ./menlo.otf ./fonts/
 find
 mkdir client
+ls --color=auto
+cd client/
+mkdir src
+ls --color=auto
+rm src
+rmdir src
+cd ..
+mkdir client/src
