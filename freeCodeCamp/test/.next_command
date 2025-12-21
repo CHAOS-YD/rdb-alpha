@@ -75,3 +75,5 @@ cd ..
 cd ../..
 ls --color=auto
 clear
+ls --color=auto
+mkdir website
