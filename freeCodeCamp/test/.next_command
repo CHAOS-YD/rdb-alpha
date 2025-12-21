@@ -289,3 +289,9 @@ more ./README.md
 echo I made this boilerplate
 echo I made this boilerplate >> ./README.md
 more ./README.md
+__vsc_prompt_cmd_original
+echo I made this boilerplate
+echo I made this boilerplate >> ./README.md
+echo one more thing... >> ./README.md
+more ./README.md
+echo from the command line >> ./README.md
