@@ -254,3 +254,5 @@ find -name clien t
 find -name client
 find client
 find ./client/assets/fonts/
+touch ./client/assets/fonts/lato-bold.woff
+touch ./client/assets/fonts/lato-bold.ttf
