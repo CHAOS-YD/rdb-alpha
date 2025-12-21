@@ -203,3 +203,4 @@ ls --color=auto
 cd ..
 ls --color=auto
 mv ./images/footer.jpeg ./client/assets/images
+find
