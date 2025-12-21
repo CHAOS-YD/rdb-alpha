@@ -288,3 +288,4 @@ more Re
 more ./README.md
 echo I made this boilerplate
 echo I made this boilerplate >> ./README.md
+more ./README.md
