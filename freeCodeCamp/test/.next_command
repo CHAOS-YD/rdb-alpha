@@ -83,3 +83,4 @@ ls --color=auto
 echo hello website
 clear
 touch index.html
+touch styles.css
