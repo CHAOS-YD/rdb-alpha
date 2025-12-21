@@ -301,3 +301,4 @@ more ./README.md
 cd ..
 __vsc_prompt_cmd_original
 ls --color=auto
+mv website/ website-boilerplate
