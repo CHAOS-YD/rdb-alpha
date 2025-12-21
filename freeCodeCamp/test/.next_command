@@ -91,3 +91,4 @@ ls --color=auto
 ls --color=auto --help
 clear
 ls --color=auto --all
+cd .
