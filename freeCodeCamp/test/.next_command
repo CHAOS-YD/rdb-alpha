@@ -284,3 +284,7 @@ echo Yay!
 echo I finished the boilerplate!
 __vsc_prompt_cmd_original
 echo one more thing...
+more Re
+more ./README.md
+echo I made this boilerplate
+echo I made this boilerplate >> ./README.md
