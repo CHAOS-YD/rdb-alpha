@@ -138,3 +138,4 @@ clear
 ls --color=auto
 mkdir fonts
 ls --color=auto
+mv roboto.woff ./fonts
