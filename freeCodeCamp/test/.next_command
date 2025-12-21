@@ -161,3 +161,6 @@ cd ..
 mkdir client/src
 mv ./index.html ./client/src/
 find
+__vsc_prompt_cmd_original
+ls --color=auto
+mv ./index.js ./client/src
