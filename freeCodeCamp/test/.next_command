@@ -165,3 +165,4 @@ __vsc_prompt_cmd_original
 ls --color=auto
 mv ./index.js ./client/src
 mv ./styles.css ./client/src/
+find
