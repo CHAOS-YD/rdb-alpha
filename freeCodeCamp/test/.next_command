@@ -230,3 +230,4 @@ ls --color=auto
 mkdir ./client/assets/icons
 ls --color=auto
 mv ./CodeAlly.svg ./client/assets/icons/
+find
