@@ -188,3 +188,4 @@ ls --color=auto
 cd ..
 la
 ls --color=auto
+find -name images
