@@ -398,3 +398,7 @@ mv ./toms-website/ website-boilerplate
 ls --color=auto
 cp -r ./website-boilerplate/ toms-website
 ls --color=auto
+__vsc_prompt_cmd_original
+fins
+find
+find toms-website
