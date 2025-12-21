@@ -77,3 +77,4 @@ ls --color=auto
 clear
 ls --color=auto
 mkdir website
+ls --color=auto
