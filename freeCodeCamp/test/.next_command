@@ -48,3 +48,4 @@ ls --color=auto
 ls --color=auto -1
 ls --color=auto -2
 cd ..
+ls --color=auto
