@@ -268,3 +268,10 @@ ls --color=auto
 cd ..
 rmdir fonts
 rm --help
+rmdir -r fonts
+-r fonts
+rmdir -r fonts
+ls --color=auto
+ls --color=auto
+rmdir-r fonts
+rm -r fonts
