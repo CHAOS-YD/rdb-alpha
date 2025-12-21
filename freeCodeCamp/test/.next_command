@@ -38,3 +38,4 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 alias
 echo hello terminal
 pwd
+ls --color=auto
