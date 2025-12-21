@@ -92,3 +92,4 @@ ls --color=auto --help
 clear
 ls --color=auto --all
 cd .
+touch background.jpg
