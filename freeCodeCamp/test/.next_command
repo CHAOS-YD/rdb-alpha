@@ -149,3 +149,4 @@ find -name index.js
 clear
 ls --color=auto
 mv ./menlo.otf ./fonts/
+find
