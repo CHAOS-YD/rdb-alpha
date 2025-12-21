@@ -50,3 +50,4 @@ ls --color=auto -2
 cd ..
 ls --color=auto
 more ./package.json
+clear
