@@ -262,3 +262,9 @@ touch ./client/assets/fonts/lato-light.ttf
 find ./client/assets/fonts/
 fins
 find
+ls --color=auto
+cd fonts
+ls --color=auto
+cd ..
+rmdir fonts
+rm --help
