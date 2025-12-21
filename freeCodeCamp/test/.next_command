@@ -103,3 +103,5 @@ menlo.font
 touch menlo.font
 clear
 ls --color=auto
+ls --color=auto -1
+touch CodeAlly.svg
