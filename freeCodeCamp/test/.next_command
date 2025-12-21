@@ -189,3 +189,8 @@ cd ..
 la
 ls --color=auto
 find -name images
+cd images
+ls --color=auto
+cd ..
+ls --color=auto
+mv ./header.png ./client/assets/images
