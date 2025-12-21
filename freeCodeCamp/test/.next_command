@@ -144,3 +144,8 @@ cleat
 clear
 ls --color=auto
 mv ./lato.ttf fonts
+find
+find -name index.js
+clear
+ls --color=auto
+mv ./menlo.otf ./fonts/
