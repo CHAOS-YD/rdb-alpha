@@ -299,3 +299,5 @@ more ./README.md
 echo for the freeCodeCamp bash lessons >> ./README.md
 more ./README.md
 cd ..
+__vsc_prompt_cmd_original
+ls --color=auto
