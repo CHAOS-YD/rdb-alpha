@@ -295,3 +295,4 @@ echo I made this boilerplate >> ./README.md
 echo one more thing... >> ./README.md
 more ./README.md
 echo from the command line >> ./README.md
+more ./README.md
