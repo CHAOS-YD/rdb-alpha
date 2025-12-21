@@ -259,3 +259,6 @@ touch ./client/assets/fonts/lato-bold.ttf
 rm ./client/assets/fonts/lato-bold.woff
 find ./client/assets/fonts/
 touch ./client/assets/fonts/lato-light.ttf
+find ./client/assets/fonts/
+fins
+find
