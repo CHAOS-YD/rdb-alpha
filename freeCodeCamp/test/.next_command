@@ -1,0 +1,523 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+alias
+echo hello terminal
+pwd
+ls --color=auto
+cd ./freeCodeCamp/
+pwd
+ls --color=auto
+cd test
+pwd
+ls --color=auto
+ls --color=auto -1
+ls --color=auto -2
+cd ..
+ls --color=auto
+more ./package.json
+clear
+ls --color=auto
+ls --color=auto
+cd node_modules/
+ls --color=auto
+ls --color=auto -1
+ls --color=auto -1
+ls --color=auto -l
+cd has
+__vsc_prompt_cmd_original
+ls --color=auto
+more ./README.md
+ls --color=auto
+more ./LICENSE-MIT
+clear
+ls --color=auto
+cd src
+pwd
+ls --color=auto
+more index.js
+cd ..
+cd ..
+cd ../..
+ls --color=auto
+clear
+ls --color=auto
+mkdir website
+ls --color=auto
+cd website/
+ls --color=auto
+echo hello website
+clear
+touch index.html
+touch styles.css
+ls --color=auto
+touch index.js
+touch .gitignore
+ls --color=auto
+ls --color=auto --help
+clear
+ls --color=auto --all
+cd .
+touch background.jpg
+ls --color=auto
+touch header.png
+touch footer.jpeg
+ls --color=auto
+touch roboto.font
+touch lato.font
+menlo.font
+touch menlo.font
+clear
+ls --color=auto
+ls --color=auto -1
+touch CodeAlly.svg
+touch CodeRoad.svg
+touch freeCodeCamp.svg
+ls --color=auto
+mkdir images
+ls --color=auto
+cp ./background.jpg images
+cd images/
+ls --color=auto
+cd ..
+clear
+ls --color=auto
+rm background.jpg
+ls --color=auto
+cp ./header.png images
+cp ./footer.jpeg images
+cd images
+ls --color=auto
+cd ..
+ls --color=auto
+rm ./header.png
+rm ./footer.jpeg
+ls --color=auto
+mv ./roboto.font ./roboto.woff
+ls --color=auto
+clear
+ls --color=auto
+mv ./lato.font ./lato.ttf
+mv ./menlo.font ./menlo.otf
+l
+clear
+ls --color=auto
+mkdir fonts
+ls --color=auto
+mv roboto.woff ./fonts
+find
+cleat
+clear
+ls --color=auto
+mv ./lato.ttf fonts
+find
+find -name index.js
+clear
+ls --color=auto
+mv ./menlo.otf ./fonts/
+find
+mkdir client
+ls --color=auto
+cd client/
+mkdir src
+ls --color=auto
+rm src
+rmdir src
+cd ..
+mkdir client/src
+mv ./index.html ./client/src/
+find
+__vsc_prompt_cmd_original
+ls --color=auto
+mv ./index.js ./client/src
+mv ./styles.css ./client/src/
+find
+find client
+find --help
+find -name index.html
+find -name styles.css
+find src
+find -name src
+find
+cd client
+mkdir assets
+cd assets
+mkdir images
+cd images
+touch background.jpg
+cd ../../..
+ls --color=auto
+cd images
+ls --color=auto
+mv header.png ..
+ls --color=auto
+cd ..
+la
+ls --color=auto
+find -name images
+cd images
+ls --color=auto
+cd ..
+ls --color=auto
+mv ./header.png ./client/assets/images
+find -name headder.png
+find -name header.png
+find -name footer.jpeg
+ls --color=auto
+cd images
+ls --color=auto
+cd ..
+ls --color=auto
+mv ./images/footer.jpeg ./client/assets/images
+find
+ls --color=auto
+rmdir images
+ls --color=auto
+ls --color=auto
+cd images
+ls --color=auto
+rm background.jpg
+cd ..
+rmdir images
+ls --color=auto
+cd cli
+ls --color=auto
+cd ./client/assets/
+ls --color=auto
+mkdir icons
+ls --color=auto
+rmdir icons
+cd ..
+mkdir ./client/assets/icons
+cd..
+ls --color=auto
+cd ..
+ls --color=auto
+mkdir ./client/assets/icons
+ls --color=auto
+mv ./CodeAlly.svg ./client/assets/icons/
+find
+mv ./CodeRoad.svg ./client/assets/icons/
+ls --color=auto
+mv ./freeCodeCamp.svg client/assets/icons/
+find
+ls --color=auto
+mv ./fonts/ ./client/assets/
+ls --color=auto
+cd ./client/assets/
+ls --color=auto
+mv fonts ../../
+cd ../../
+ls --color=auto
+mkdir ./client/assets/fonts
+touch ./client/assets/fonts/roboto-bold.woff
+touch ./client/assets/fonts/roboto-light.woff
+find -name fonts
+find fonts
+find clients
+find client
+find -name clien t
+find -name client
+find client
+find ./client/assets/fonts/
+touch ./client/assets/fonts/lato-bold.woff
+touch ./client/assets/fonts/lato-bold.ttf
+rm ./client/assets/fonts/lato-bold.woff
+find ./client/assets/fonts/
+touch ./client/assets/fonts/lato-light.ttf
+find ./client/assets/fonts/
+fins
+find
+ls --color=auto
+cd fonts
+ls --color=auto
+cd ..
+rmdir fonts
+rm --help
+rmdir -r fonts
+-r fonts
+rmdir -r fonts
+ls --color=auto
+ls --color=auto
+rmdir-r fonts
+rm -r fonts
+ls --color=auto
+touch package.json
+touch server.js
+touch README.md
+ls --color=auto
+echo Yay!
+echo I finished the boilerplate!
+__vsc_prompt_cmd_original
+echo one more thing...
+more Re
+more ./README.md
+echo I made this boilerplate
+echo I made this boilerplate >> ./README.md
+more ./README.md
+__vsc_prompt_cmd_original
+echo I made this boilerplate
+echo I made this boilerplate >> ./README.md
+echo one more thing... >> ./README.md
+more ./README.md
+echo from the command line >> ./README.md
+more ./README.md
+echo for the freeCodeCamp bash lessons >> ./README.md
+more ./README.md
+cd ..
+__vsc_prompt_cmd_original
+ls --color=auto
+mv website/ website-boilerplate
+ls --color=auto
+cp --help
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+ls --color=auto
+mkdir toms-website
+ls --color=auto
+mv ./website-boilerplate/ ./toms-website/
+ls --color=auto
+cd toms-website/
+ls --color=auto
+mv ./website-boilerplate/ ..
+cd ..
+ls --color=auto
+cd ./website-boilerplate/
+ls --color=auto
+mv ./client/ ../toms-website/
+ls --color=auto
+mv ./package.json ../toms-website/
+ls --color=auto
+mv ./README.md ../toms-website/
+mv ./server.js ../toms
+cd ..
+ls --color=auto
+rm toms
+ls --color=auto
+cd ./website-boilerplate/
+ls --color=auto
+mkdir server.js
+ls --color=auto
+mv ./server.js/ ../toms-website/
+cd ..
+ls --color=auto
+rmdir ./website-boilerplate/
+rm -r ./website-boilerplate/
+ls --color=auto
+ls --color=auto
+mv ./toms-website/ website-bolierplate
+ls --color=auto
+cp -r website-bolierplate/ toms-website
+ls --color=auto
+cd ./toms-website/
+ls --color=auto
+cd ..
+ls --color=auto
+cd t./toms-website/
+cd ./toms-website/
+ls --color=auto
+cd ..
+ls --color=auto
+rm -r ./website-bolierplate/
+ls --color=auto
+./toms-website/
+cd ./toms-website/
+ls --color=auto
+cd ..
+ls --color=auto
+mv ./toms-website/ website-boilerplate
+ls --color=auto
+cp -r ./website-boilerplate/ toms-website
+ls --color=auto
+__vsc_prompt_cmd_original
+fins
+find
+find toms-website
+find
+find ./website-boilerplate/
+clear
+echo "goodbye terminal"
+echo goodbye terminal
+exit
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+git status
+git add .
