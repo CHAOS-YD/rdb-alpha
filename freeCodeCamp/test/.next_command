@@ -52,3 +52,4 @@ pwd
 ls --color=auto
 ls --color=auto
 cd test
+pwd
