@@ -150,3 +150,9 @@ mv roboto.font roboto.woff
 ls --color=auto
 mv lato.font lato.woff
 mv lato.woff lato.ttf
+mv menlo.font lato.otf
+mv lato.otf lato.ttf
+ls --color=auto
+mv menlo.font menlo.otf
+mv lato.otf menlo.otf
+mv lato.ttf menlo.otf
