@@ -187,3 +187,4 @@ find
 cd client
 mkdir client
 mkdir assets
+cd assets
