@@ -170,3 +170,7 @@ mkdir client
 mkdir client/src
 mv index.html client/src
 find
+mv index.html client/src
+touch index.html
+mv index.html client/src
+mv index.js client/src
