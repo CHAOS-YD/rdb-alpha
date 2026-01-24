@@ -40,3 +40,12 @@ echo hello terminal
 pwd
 ls --color=auto
 cd freeCodeCamp
+cd freeCodeCamp
+ls --color=auto
+cd ..
+cd freeCodeCamp
+cd /workspace/project
+pwd
+cd /workspace/project
+cd /workspace/project/freeCodeCamp
+pwd
