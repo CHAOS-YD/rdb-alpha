@@ -211,3 +211,4 @@ rmdir images
 rm images/background.jpg
 cd /workspace/project/website
 rmdir images
+ls --color=auto
