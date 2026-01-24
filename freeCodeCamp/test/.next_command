@@ -101,3 +101,11 @@ touch inde.js
 touch index.js
 touch .gitignore
 ls --color=auto
+ls --color=auto -l
+cd /workspace/project/website
+--help
+ls --color=auto
+touch .gitignore
+ls --color=auto
+ls --color=auto -l
+ls --color=auto --help
