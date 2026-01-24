@@ -81,3 +81,4 @@ cd /scrc
 ls --color=auto
 cd src
 pwd
+ls --color=auto
