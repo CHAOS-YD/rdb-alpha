@@ -185,3 +185,5 @@ find -name index.html
 find -name src
 find
 cd client
+mkdir client
+mkdir assets
