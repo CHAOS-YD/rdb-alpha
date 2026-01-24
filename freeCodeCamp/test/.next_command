@@ -193,3 +193,4 @@ cd images
 touch freCodeCamp.svg
 touch background.jpg
 cd ../../..
+cd images
