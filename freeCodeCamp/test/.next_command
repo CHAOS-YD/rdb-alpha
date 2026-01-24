@@ -91,3 +91,4 @@ clear
 mkdir website
 list
 ls --color=auto
+cd website
