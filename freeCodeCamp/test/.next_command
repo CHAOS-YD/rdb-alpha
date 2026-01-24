@@ -194,3 +194,4 @@ touch freCodeCamp.svg
 touch background.jpg
 cd ../../..
 cd images
+ls --color=auto
