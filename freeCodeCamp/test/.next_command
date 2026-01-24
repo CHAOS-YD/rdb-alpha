@@ -158,3 +158,4 @@ mv lato.otf menlo.otf
 mv lato.ttf menlo.otf
 ls --color=auto
 mkdir fonts
+ls --color=auto
