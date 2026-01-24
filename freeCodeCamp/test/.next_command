@@ -49,3 +49,4 @@ pwd
 cd /workspace/project
 cd /workspace/project/freeCodeCamp
 pwd
+ls --color=auto
