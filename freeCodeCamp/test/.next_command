@@ -212,3 +212,5 @@ rm images/background.jpg
 cd /workspace/project/website
 rmdir images
 ls --color=auto
+mkdir client/assets/incos
+mkdir client/assets/icons
