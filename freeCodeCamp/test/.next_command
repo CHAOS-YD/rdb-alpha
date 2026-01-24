@@ -252,3 +252,4 @@ ls --color=auto
 mv website website-boilterplate
 mv website-boilterplate website-boilerplate
 ls --color=auto
+cp --help
