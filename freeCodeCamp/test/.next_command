@@ -165,3 +165,4 @@ mv lato.ttf fonts
 touch lato.ttf
 mv lato.ttf fonts
 mv menlo.otf fonts
+find
