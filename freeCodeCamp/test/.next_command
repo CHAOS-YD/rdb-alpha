@@ -100,3 +100,4 @@ ls --color=auto
 touch inde.js
 touch index.js
 touch .gitignore
+ls --color=auto
