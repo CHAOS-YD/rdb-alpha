@@ -50,3 +50,5 @@ cd /workspace/project
 cd /workspace/project/freeCodeCamp
 pwd
 ls --color=auto
+ls --color=auto
+cd test
