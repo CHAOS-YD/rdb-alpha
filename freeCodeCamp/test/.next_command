@@ -184,3 +184,4 @@ find -name styles.css
 find -name index.html
 find -name src
 find
+cd client
