@@ -99,3 +99,4 @@ touch styles.css
 ls --color=auto
 touch inde.js
 touch index.js
+touch .gitignore
