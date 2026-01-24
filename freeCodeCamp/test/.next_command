@@ -76,3 +76,7 @@ cd /
 cd /workspace/project/freeCodeCamp/node
 cd /workspace/project/freeCodeCamp/node_modules/has
 ls --color=auto
+cd scrc
+cd /scrc
+ls --color=auto
+cd src
