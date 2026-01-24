@@ -80,3 +80,4 @@ cd scrc
 cd /scrc
 ls --color=auto
 cd src
+pwd
