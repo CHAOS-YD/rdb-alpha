@@ -5,7 +5,7 @@
 -- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 -- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 
-SET statement_timeout = 0;
+SET statement_timeout = 0; 
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
 SET client_encoding = 'UTF8';
