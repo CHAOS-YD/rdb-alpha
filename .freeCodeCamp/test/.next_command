@@ -41,3 +41,4 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql -U freecodecamp -f universe.sql
 psql -U freecodecamp -d postgres -f universe.sql
 git status
+git add .freeCodeCamp/test/.next_command
