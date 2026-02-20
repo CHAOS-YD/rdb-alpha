@@ -5,6 +5,7 @@ pg_dump -cC --inserts -U freecodecamp universe > universe.sql--
 -- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 -- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 
+psql --username=freecodecamp --dbname=postgres
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
