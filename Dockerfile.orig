@@ -48,4 +48,3 @@ RUN sed -i 's/^local\s\+all\s\+all\s\+peer/local all all trust/' /etc/postgresql
 
 # Switch back to regular user
 USER ${USERNAME}
-
