@@ -10,7 +10,7 @@
         }
     },
     "remoteEnv": {
-        "CODEROAD_WEBHOOK_TOKEN": "${localEnv:CODEROAD_WEBHOOK_TOKEN}"
+        "CODEROAD_WEBHOOK_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVG9rZW4iOiJ1OXcwQWphbHZObnFQcW1WaXJzOU1naVFVSFBCaHNMa2cwbWI2NUtRUkZvRHJFUTFiYWp6Nkh2VFl3UU5CTmx0IiwiaWF0IjoxNzc0NTE1NDIxfQ.uU8jG6evtFG-c1HrEpDoqXHSDQ3pvmdpJkJsKSyKEMM"
     },
     "postStartCommand": "for i in $(seq 1 600); do\n  if [ -d .freeCodeCamp ]; then\n    echo 'Found .freeCodeCamp, installing dependencies...'\n    cd .freeCodeCamp && npm install\n    echo 'npm install finished.'\n    break\n  else\n    echo \"Waiting for .freeCodeCamp ($i/600)\"\n  fi\n  sleep 1\ndone &&\necho 'Starting PostgreSQL...' &&\nsudo service postgresql start &&\necho 'Waiting a few seconds...' &&\nsleep 3 &&\necho 'Creating user freecodecamp...' &&\nsudo -u postgres psql -c \"CREATE USER freecodecamp CREATEDB;\" 2>/dev/null || true &&\necho 'Creating database freecodecamp...' &&\nsudo -u postgres psql -c \"CREATE DATABASE freecodecamp OWNER freecodecamp;\" 2>/dev/null || true &&\necho 'PostgreSQL initialized.'"
 }
